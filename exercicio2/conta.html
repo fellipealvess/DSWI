@@ -1,3 +1,4 @@
+<!---professor fiquei com duvidas em relação a estrutura e se a tag label era necessaria ou se bastaria utilizar a tag <p> apenas, de uma olhada e me corrija onde errei-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,24 +14,117 @@
             <ul>
               <li>
                 <label for="nome">Nome:</label> 
-                <input type ="text" name="nome" id="nome"></li>
+                <input type ="text" name="nome" id="nome">
+              </li>
               <li>
                 <label for="sobrenome">Sobrenome:</label>
-                <input type ="text" name="sobrenome" id="sobrenome"></li>
+                <input type ="text" name="sobrenome" id="sobrenome">
+              </li>
               <li>
                 <label for="email">E-mail:</label>
-                <input type="text" name="email" id="email"></li>
+                <input type="email" name="email" id="email">
+              </li>
               <li>
                 <label for="senha">Senha:</label>
-                <input type="text" name="senha" id="senha"></li>
+                <input type="password" name="senha" id="senha">
+              </li>
               <li>
                 <label for="senha">Repita a senha:</label>
-                <input type="text" name="senha" id="senha"></li>
+                <input type="password" name="senha" id="senha">
+              </li>
             </ul>
         </fieldset>
     </form>
 
-    
-    
+    <form>
+      <fieldset>
+        <h2>Endereço</h2>
+        <ul>
+          <li>
+            <label for="logradouro">Logradouro:</label>
+            <input type ="text" name="logradouro" id="logradouro">
+          </li>
+          <li>
+            <label for="complemento">Complemento:</label>
+            <input type ="text" name="complemento" id="complemento">
+          </li>
+          <li>
+            <label for="cidade">Cidade:</label>
+            <input type ="text" name="cidade" id="cidade">
+          </li>
+          <li>
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado">
+              <option value="">Selecione um Estado</option>
+              <option value="pernambuco">Pernambuco</option>
+              <option value="saopaulo">São Paulo</option>
+              <option value="riodejaneiro">Rio de Janeiro</option>
+              </select>
+          </li>
+          <li>
+            <label for="cep">CEP:</label>
+            <input type ="number" name="cep" id="cep">
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+
+    <form>
+      <fieldset>
+        <h2>Perfil</h2>
+        <ul>
+          <li>
+            <label for="foto">Foto:</label>
+            <input type ="file" name="foto" id="foto">
+            <p>Tamanho máximo de 700k, JPG, GIF PNG.</p>
+          </li>
+          <li>
+            <label for="nome2">Nome:</label>
+            <input type ="text" name="nome2" id="nome2">
+          </li>
+          <li>
+            <label for="site">Site:</label>
+            <input type ="url" name="site" id="site">
+            <p>Tem um site ou um blog? Coloque o endereço aqui.</p>
+          </li>
+          <li>
+            <label for="biografia">Biografia:</label>
+            <textarea name="biografia" rows="10" cols="50">
+              </textarea>
+          </li>
+          <li>
+            <label for="genero">Gênero:</label>
+
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label>
+
+            <input type="radio" id="feminino" name="genero" value="feminino">
+            <label for="feminino">Feminino</label>
+
+            <input type="radio" id="outro" name="genero" value="outro">
+            <label for="outro">Outro</label>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+
+    <form>
+      <fieldset>
+        <h1>E-mails</h1>
+        <ul>
+          <li>
+            <input type="checkbox" id="mensagensdeusuario" name="mensagensdeusuario" value="mensagensdeusuario">
+            <label for="mensagensdeusuario">Tudo bem em enviar e-mails com mensagens de outros usuários.</label>
+          </li>
+          <li>
+            <input type="checkbox" id="mensagenspromocoes" name="mensagenspromocoes" value="mensagenspromocoes">
+            <label for="mensagenspromocoes">Tudo bem em enviar e-mails ocasionais com promoções sobre outros produtos.</label>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+    <fieldset>
+      <input type="submit" value="Criar conta">
+    </fieldset> 
 </body>
 </html>
